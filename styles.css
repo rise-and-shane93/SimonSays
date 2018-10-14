@@ -1,0 +1,49 @@
+/*====================
+CODE COMMON TO ALL PAGES
+====================*/
+
+* {
+    box-sizing: border-box;
+}
+
+#simon {
+    background-color: #373737;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+#center h1 {
+    color: white;
+    margin: 0;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.color p {
+    display: none;
+}
+
+#green {
+    height: 250px;
+    width: 250px;
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    border-top-left-radius: 150%;
+}
