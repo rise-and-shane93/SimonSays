@@ -35,15 +35,91 @@ CODE COMMON TO ALL PAGES
     z-index: 2;
 }
 
-.color p {
+/* .color p {
     display: none;
-}
+} */
 
-#green {
+.color {
     height: 250px;
     width: 250px;
-    background-color: green;
     position: absolute;
     z-index: 1;
-    border-top-left-radius: 150%;
 }
+
+.green {
+    background-color: #006400;
+    border-top-left-radius: 100%;
+    top: 30px;
+    left: 30px;
+}
+
+.red {
+    background-color: #B22222;
+    border-top-right-radius: 100%;
+    top: 30px;
+    left: 320px;
+}
+
+.yellow {
+    background-color: #999900;
+    border-bottom-left-radius: 100%;
+    top: 320px;
+    left: 30px;
+}
+
+.blue {
+    background-color: #000080;
+    border-bottom-right-radius: 100%;
+    top: 320px;
+    left: 320px;
+}
+
+.color p {
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: 100px;
+}
+/* This is for a "clicked" class
+.green:hover::after {
+    background-color: #00ff00;
+}
+
+.red:hover::after {
+    background-color: #ff0000;
+}
+
+.yellow:hover::after {
+    background-color: yellow;
+}
+
+.blue:hover::after {
+    background-color: #0000ff;
+}
+*/
+.green:hover {
+    border-left: 10px solid #00ff00;
+    border-top: 10px solid #00ff00;
+}
+
+/* .green:hover::after {
+    border-left: 10px solid #00ff00;
+    border-top: 10px solid #00ff00;
+} */
+
+.red:hover {
+    border-right: 10px solid #ff0000;
+    border-top: 10px solid #ff0000;
+}
+
+.yellow:hover {
+    border-left: 10px solid yellow;
+    border-bottom: 10px solid yellow;
+}
+
+.blue:hover {
+    border-right: 10px solid #0000ff;
+    border-bottom: 10px solid #0000ff;
+}
+
+
